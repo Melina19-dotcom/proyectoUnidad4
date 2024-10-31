@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', 'sans-serif';
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -23,15 +29,48 @@ header {
     padding: 10px 20px;
 }
 
+.imp-links a, .shortcut-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+}
+.imp-links a img{
+    width: 25px;
+    margin-right: 15px;
+}
+.imp-links a:last-child{
+    color: #1876f2;
+}
+.imp-links{
+  border-bottom: 1px solid #ccc;
+}
+.shortcut-links a img{
+    width: 40px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+.shortcut-links p{
+        margin: 25px 0;
+        color:  #626262;
+        font-weight: 500;
+}
 .logo {
     font-size: 24px;
     font-weight: bold;
+}
+.icono{
+    height: 42px;
+    width: 42px;
+
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #1876f2;
+    background: linear-gradient(to right, #1FEB74, #4A90E2);
     padding: 5px 5%;
     position: sticky;
     top: 0;
@@ -41,17 +80,27 @@ nav{
     width: 160px;
     margin-right: 45px;
 }
-.nav-left, .nav-right{
+.barra{
     display: flex;
+    justify-content: space-between;
+}
+.nav-left{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-.nav-left ul li{
-    list-style: none;
-    display: inline-block;
+.nav-right{
+    display: flex;
 }
-.nav-left ul li img{
-    width: 28px;
-    margin: 0 15px;
+.nav-items,
+.nav-right1 {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+.nav-items li,
+.nav-right1 li {
+    margin: 0 10px; /* Espacio proporcional entre los elementos */
 }
 .nav-user-icon img{
     width: 40px;
@@ -79,15 +128,20 @@ nav{
 .main-content {
     display: flex;
     margin-top: 20px;
+
+    flex: 1;                  /* Cada elemento ocupará el mismo espacio */
+    margin: 0 10px;          /* Margen lateral entre los elementos */
+    box-sizing: border-box;
 }
 
 .sidebar {
     width: 25%;
-    background: #ffbd60;
+    background:linear-gradient(to right, #37ff8a, #30C6A0) ;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-right: 20px;
+    margin-left: 0;  
 }
 
 .profile {
@@ -111,10 +165,13 @@ nav{
 
 main {
     flex: 1;
-    background: #dbac64c4;
+    background: linear-gradient(to right, #30C6A0, #3AB1BA);
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+    margin: 0 10px;          /* Margen lateral entre los elementos */
+    box-sizing: border-box;
 }
 
 .camera{
@@ -152,14 +209,19 @@ main {
     border-radius: 5px;
     cursor: pointer;
 }
-
+/*
 .container2{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     align-items: center;
 
+}*/
+.container{
+    display: flex;             /* Habilita Flexbox */
+    justify-content: space-between; /* Distribuye el espacio entre elementos */
 }
+
 .posts .post {
     margin-bottom: 20px;
     padding: 10px;
@@ -173,4 +235,19 @@ main {
 
 .placeholder{
     outline: none;
+}
+
+.right-content{
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    background: linear-gradient(to right, #3AB1BA, #3EA9C4);
+    flex: 1;                  /* Cada elemento ocupará el mismo espacio */
+    margin: 0 10px;          /* Margen lateral entre los elementos */
+    box-sizing: border-box;
+    margin-right: 0;  
+}
+aside{
+    margin-left: 0;
 }
