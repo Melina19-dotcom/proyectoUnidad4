@@ -10,9 +10,12 @@ body {
     padding: 0;
     background-color: #f0f2f5;
 }
-
+.body-post{
+    padding: 15px 20px;
+    word-wrap: break-word;
+}
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
     padding: 20px;
 }
@@ -34,7 +37,7 @@ header {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
-    color: #626262;
+    color: black;
     width: fit-content;
 }
 .imp-links a img{
@@ -42,7 +45,7 @@ header {
     margin-right: 15px;
 }
 .imp-links a:last-child{
-    color: #1876f2;
+    color: #ffffff;
 }
 .imp-links{
   border-bottom: 1px solid #ccc;
@@ -54,7 +57,7 @@ header {
 }
 .shortcut-links p{
         margin: 25px 0;
-        color:  #626262;
+        color:  #fffdfd;
         font-weight: 500;
 }
 .logo {
@@ -70,7 +73,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(to right, #1FEB74, #4A90E2);
+    background: linear-gradient(to right, #5e92f3, #8a53e9);
     padding: 5px 5%;
     position: sticky;
     top: 0;
@@ -136,7 +139,7 @@ nav{
 
 .sidebar {
     width: 25%;
-    background:linear-gradient(to right, #37ff8a, #30C6A0) ;
+    background:linear-gradient(to right, #5e92f3, #6783F0) ;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -165,7 +168,7 @@ nav{
 
 main {
     flex: 1;
-    background: linear-gradient(to right, #30C6A0, #3AB1BA);
+    background: linear-gradient(to right, #6783F0, #796AEC);
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -209,29 +212,19 @@ main {
     border-radius: 5px;
     cursor: pointer;
 }
-/*
+
 .container2{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     align-items: center;
 
-}*/
+}
 .container{
     display: flex;             /* Habilita Flexbox */
     justify-content: space-between; /* Distribuye el espacio entre elementos */
 }
 
-.posts .post {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.posts .post h3 {
-    margin: 0 0 10px 0;
-}
 
 .placeholder{
     outline: none;
@@ -242,12 +235,94 @@ main {
     position: sticky;
     top: 70px;
     align-self: flex-start;
-    background: linear-gradient(to right, #3AB1BA, #3EA9C4);
+    background: linear-gradient(to right, #796AEC, #8a53e9);
     flex: 1;                  /* Cada elemento ocupará el mismo espacio */
     margin: 0 10px;          /* Margen lateral entre los elementos */
     box-sizing: border-box;
     margin-right: 0;  
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 15px;  
 }
-aside{
-    margin-left: 0;
-}
+
+/*Aqui el css del post de la publiación*/
+.post-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 20px;
+  }
+
+  /* Cabecera de la publicación */
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ccc;
+  }
+
+  .user-info {
+    margin-left: 10px;
+  }
+
+  .user-info h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .user-info span {
+    font-size: 12px;
+    color: #777;
+  }
+
+  /* Contenido de la publicación */
+  .post-content {
+    margin: 15px 0;
+    font-size: 15px;
+    color: #444;
+    line-height: 1.4;
+  }
+
+  /* Reacciones */
+  .post-reactions {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .reaction {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  .reaction img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  /* Iconos de reacción */
+  .icon-heart {
+    color: #e0245e;
+  }
+
+  .icon-comment {
+    color: #0095f6;
+  }
+/*Aqui termina el css del post de la publicación
