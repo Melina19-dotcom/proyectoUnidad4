@@ -131,8 +131,6 @@ nav{
 .main-content {
     display: flex;
     margin-top: 20px;
-
-    flex: 1;                  /* Cada elemento ocupará el mismo espacio */
     margin: 0 10px;          /* Margen lateral entre los elementos */
     box-sizing: border-box;
 }
@@ -140,7 +138,7 @@ nav{
 .sidebar {
     width: 25%;
     background:linear-gradient(to right, #5e92f3, #6783F0) ;
-    padding: 15px;
+    padding: 5px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-right: 20px;
@@ -167,14 +165,13 @@ nav{
 }
 
 main {
-    flex: 1;
     background: linear-gradient(to right, #6783F0, #796AEC);
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    
     margin: 0 10px;          /* Margen lateral entre los elementos */
     box-sizing: border-box;
+    width: 60%;
 }
 
 .camera{
@@ -231,12 +228,12 @@ main {
 }
 
 .right-content{
-    flex-basis: 25%;
+    flex-basis: 20%;
+    width: 15%;
     position: sticky;
     top: 70px;
     align-self: flex-start;
     background: linear-gradient(to right, #796AEC, #8a53e9);
-    flex: 1;                  /* Cada elemento ocupará el mismo espacio */
     margin: 0 10px;          /* Margen lateral entre los elementos */
     box-sizing: border-box;
     margin-right: 0;  
@@ -325,4 +322,99 @@ main {
   .icon-comment {
     color: #0095f6;
   }
-/*Aqui termina el css del post de la publicación
+/*Aqui termina el css del post de la publicación*/
+
+/*Empieza el css de aside(perfil)*/
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+figure {
+    display: block;
+    margin-block-start: 5px;
+    margin-block-end: 1em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    unicode-bidi: isolate;
+}
+
+.user-logged {
+    width: 100%;
+    text-align: center;
+}
+
+.photo {
+    width: 10em;
+    height: 10em;
+    margin-top: -5em;
+    border-radius: 200px;
+    border: solid 5px #ffffff;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.user-logged {
+    width: 100%;
+    text-align: center;
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.container-info {
+    width: 100%;
+}
+
+.name {
+    width: 100%;
+    align-items: center;
+    margin-top: 0.5em;
+    padding: 0 1em;
+    position: relative;
+}
+
+.name p {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    text-transform: full-width;
+}
+
+.description {
+    width: 100%;
+    margin: 1em 0;
+    padding: 0 1em;
+    text-align: center;
+    position: relative;
+}
+
+.description p {
+    padding-top: 0.2em;
+    height: 1.8em;
+    text-align: center;
+}
+
+.edit {
+    width: 1.7em;
+    height: 1.7em;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0.4em;
+}

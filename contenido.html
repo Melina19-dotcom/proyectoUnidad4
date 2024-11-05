@@ -11,7 +11,7 @@
     
       <nav class="barra">
         <div class="nav-left">
-            <img src="images/...png" class="logo">
+            <img src="img/logoPagina.png" class="logo">
             <ul class="nav-items">
                 <li><a href="prueba.html"><img src="images/notification.png"></a></li>
                 <li><a href="#"><img src="images/inbox.png"></a></li>
@@ -33,7 +33,8 @@
     <div class="container">
         <div class="main-content">
             <aside class="sidebar">
-                <div class="profile">
+              
+              <!-- <div class="profile">
                     <img src="img/usuario.png" alt="Foto de perfil">
                     <h2>User Name</h2>
                 </div>
@@ -44,8 +45,32 @@
                         <li>Contacto 2</li>
                         <li>Contacto 3</li>
                     </ul>
+                </div> -->
+                <div class="user-logged">
+                  <figure>
+                    <img src="img/fondo.png" alt="cover image" class="img-general">
+                  </figure>
+                  <img src="img/perfil.jpg" class="photo">
+                  <div class="user-data">
+                    <div class="container-info">
+                      <div class="name">
+                        <p id="userName">VALERIA MENDEZ</p>
+                        
+                        <img id="editName" src="./img/edit.png" class="edit">
+                        <p id="saveName" class="hide iconSave"><i class="far fa-save" aria-hidden="true"></i></p>
+                    
+                      </div>
+                      <div class="description">
+                        <p id="userAbout">&lt;/&gt; Developer</p>
+                        
+                        <img id="editAbout" src="./img/edit.png" class="edit">
+                        <p id="saveAbout" class="hide iconSave"><i class="far fa-save" aria-hidden="true"></i></p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </aside>
+                
+            </aside> 
             <main>
                 <div class="create-post">
                     <textarea id="placeholder" placeholder="¿Qué estás pensando?"></textarea>
@@ -58,8 +83,8 @@
                         </div>
                         <div class="privacidad">
                             <select id="privacyPostArea">
-                                <option value="1">Público</option>
-                                <option value="2">Privado</option>
+                              <option value="1">🌎 Público</option>
+                              <option value="2">🔒 Solo yo </option>
                             </select>
                         </div>
                         <button type="button" class="btn btn-outline-info">Publicar</button>
