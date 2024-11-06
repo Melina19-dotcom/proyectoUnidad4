@@ -183,6 +183,11 @@ main {
     display: flex; 
     align-items: center;
 }
+.privacidad{
+    border-radius: 10px;
+    color: beige;
+    outline: none;
+}
 .create-post {
     display: flex;
     flex-direction: column;
@@ -200,10 +205,11 @@ main {
     padding: 10px;
 }
 
-.create-post button {
+.create-post button,
+.boton{
     margin-top: 10px;
-    background: #b2429f;
-    color: white;
+    background: #ebdc0d;
+    color: rgb(66, 59, 59);
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -243,7 +249,8 @@ main {
 }
 
 /*Aqui el css del post de la publiación*/
-.post-container {
+.post-container,
+.seccionComentarios {
     width: 90%;
     max-width: 600px;
     background-color: #fff;
@@ -321,6 +328,22 @@ main {
 
   .icon-comment {
     color: #0095f6;
+  }
+
+  .seccionComentarios{
+    display: flex;
+    flex-direction: column;
+  }
+  .comentario-formulario{
+    display: flex;
+    flex-direction: column;
+  }
+  .comentario-formulario textarea{
+    outline: none;
+  }
+
+  button{
+    border: none;
   }
 /*Aqui termina el css del post de la publicación*/
 

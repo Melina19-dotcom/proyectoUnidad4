@@ -15,7 +15,6 @@
             <ul class="nav-items">
                 <li><a href="prueba.html"><img src="images/notification.png"></a></li>
                 <li><a href="#"><img src="images/inbox.png"></a></li>
-                <li><a href="#"><img src="images/video.png"></a></li>
             </ul>
             
         </div>
@@ -87,37 +86,55 @@
                               <option value="2">🔒 Solo yo </option>
                             </select>
                         </div>
-                        <button type="button" class="btn btn-outline-info">Publicar</button>
+                        <button type="button" class="boton">Publicar</button>
                         </div>
                     </div>
                 
                     <div class="post-container">
-                        <!-- Cabecera de la publicación -->
-                        <div class="post-header">
-                          <div class="profile-pic"></div>
-                          <div class="user-info">
-                            <h3>Nombre del Usuario</h3>
-                            <span>Hace 2 horas</span>
-                          </div>
-                        </div>
-                      
-                        <!-- Contenido de la publicación -->
-                        <div class="post-content">
-                          Aquí va el texto de la publicación. Este es un ejemplo de una publicación en la red social.
-                        </div>
-                      
-                        <!-- Reacciones de la publicación -->
-                        <div class="post-reactions">
-                          <div class="reaction">
-                            <img src="images/heart.png" alt="Me encanta" class="icon-heart">
-                            <span>Me encanta</span>
-                          </div>
-                          <div class="reaction">
-                            <img src="images/chat.png" class="icon-comment">
-                            <span>Comentarios</span>
-                          </div>
+                      <!-- Cabecera de la publicación -->
+                      <div class="post-header">
+                        <div class="profile-pic"></div>
+                        <div class="user-info">
+                          <h3>Otro nombre del Usuario</h3>
+                          <span>Hace 3 horas</span>
                         </div>
                       </div>
+                    
+                      <!-- Contenido de la publicación -->
+                      <div class="post-content">
+                        Aquí va el texto de la publicación. Este es un ejemplo de una publicación en la red social.
+                      </div>
+                    
+                      <!-- Reacciones de la publicación -->
+                      <div class="post-reactions">
+                        <div class="reaction">
+                          <button id="likeButton">
+                            <img src="images/amor.png" class="icon-heart">
+                          </button>
+                          <span id="reaccionesCount">0 Me gusta</span> 
+                        </div>
+                        <div class="reaction">
+                          <button>
+                            <img src="images/chat-bot.png" class="icon-comment">
+                          </button>
+                          <span id="comentariosCount">0 Comentarios</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="seccionComentarios">
+                      <!-- Formulario para agregar un comentario -->
+                      <div class="comentario-formulario">
+                        <textarea id="comentarioInput" placeholder="Escribe tu comentario..."></textarea>
+                        <button id="comentarBtn" class="boton">Comentar</button>
+                      </div>
+
+                      <!-- Lista de comentarios -->
+                      <div id="comentariosContainer">
+                        <!-- Los comentarios se cargarán aquí dinámicamente -->
+                      </div>
+                    </div>
+                    
+                      
                       <div class="post-container">
                         <!-- Cabecera de la publicación -->
                         <div class="post-header">
@@ -136,15 +153,21 @@
                         <!-- Reacciones de la publicación -->
                         <div class="post-reactions">
                           <div class="reaction">
-                            <img src="images/heart.png" alt="Me encanta" class="icon-heart">
-                            <span>Me encanta</span>
+                            <button id="likeButton">
+                              <img src="images/amor.png" class="icon-heart">
+                            </button>
+                            <span id="reaccionesCount">0 Me gusta</span> 
                           </div>
                           <div class="reaction">
-                            <img src="images/chat.png" class="icon-comment">
-                            <span>Comentarios</span>
+                            <button>
+                              <img src="images/chat-bot.png" class="icon-comment">
+                            </button>
+                            <span id="comentariosCount">0 Comentarios</span>
                           </div>
+                          
                         </div>
                       </div>
+                      
             </main>
             <div class="right-content">
                 <div class="imp-links">
