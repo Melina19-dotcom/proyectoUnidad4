@@ -203,6 +203,7 @@ main {
     border-radius: 5px;
     border: 1px solid #ddd;
     padding: 10px;
+    outline: none;
 }
 
 .create-post button,
@@ -327,7 +328,7 @@ main {
   }
 
   .icon-comment {
-    color: #0095f6;
+    color:  #0095f6;
   }
 
   .seccionComentarios{
@@ -344,6 +345,7 @@ main {
 
   button{
     border: none;
+    background-color: transparent;
   }
 /*Aqui termina el css del post de la publicación*/
 
@@ -440,4 +442,18 @@ figure img {
     top: 0;
     right: 0;
     margin-right: 0.4em;
+}
+.botones{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    background-color: none;
+    gap: 10px;
+}
+.borrar,
+.editar{
+    border: 2px solid rgb(66, 61, 61);
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(255, 230, 230);
 }
