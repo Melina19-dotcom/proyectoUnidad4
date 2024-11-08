@@ -34,20 +34,7 @@
     <div class="container">
         <div class="main-content">
             <aside class="sidebar">
-              
-              <!-- <div class="profile">
-                    <img src="img/usuario.png" alt="Foto de perfil">
-                    <h2>User Name</h2>
-                </div>
-                <div class="friends">
-                    <h3>Contactos</h3>
-                    <ul>
-                        <li>Contacto 1</li>
-                        <li>Contacto 2</li>
-                        <li>Contacto 3</li>
-                    </ul>
-                </div> -->
-                <div class="usuario-simple">
+                <!--<div class="usuario-simple">
                   <figure>
                     <img src="img/fondo.png" alt="cover image" class="img-general">
                   </figure>
@@ -69,8 +56,90 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                
+                </div>-->  
+                <div class="user-detallado">
+                  <figure>
+                    <img src="img/fondo.png" alt="cover image" class="img-general">
+                  </figure>
+                  <img src="img/perfil.jpg" class="photo">
+                  <div class="user-data">
+                    <div class="container-info">
+                      <div class="name">
+                        <p id="userName">VALERIA MENDEZ</p>
+                        
+                        <img id="editName" src="./img/edit.png" class="edit">
+                        <p id="saveName" class="hide iconSave"><i class="far fa-save" aria-hidden="true"></i></p>
+                    
+                      </div>
+                      <div class="description">
+                        <p id="userAbout">&lt;/&gt; Developer</p>
+                        
+                        <img id="editAbout" src="./img/edit.png" class="edit">
+                        <p id="saveAbout" class="hide iconSave"><i class="far fa-save" aria-hidden="true"></i></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="detalles1">
+                      <h2>Detalles</h2> 
+                      <i class="fi fi-br-edit"></i>
+                  </div>
+                  
+                  <div class="modal-body">
+                      <div class="detalles">
+                          <h3 id="infoPersonal">Información personal</h3>
+                          <p>&#128197;Fecha de cumpleaños:</p>
+                          <p>&#128188;Lugar de estudio:</p>
+                          <p>&#9993;Correo electrónico:</p>
+                          <p>&#10084;Estado civil:</p>
+                          <p>&#128177;Intereses:</p>
+                      </div>
+                  </div>
+                          
+                      <!-- Button trigger modal -->
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      Editar Información
+                      <i class="fi fi-br-edit"></i>
+                      </button>
+    
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Información personal</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="info">
+                                      <p>&#128197;Fecha de cumpleaños:</p>
+                                      <input type="text" class="form-control">
+                                  </div>
+                                  <div class="info">
+                                      <p>&#128188;Lugar de estudio:</p>
+                                      <input type="text" class="form-control">
+                                  </div>
+                                  <div class="info">
+                                      <p>&#9993;Correo electronico:</p>
+                                      <input type="text" class="form-control">
+                                  </div>
+                                  <div class="info">
+                                      <p>&#10084;Estado civil:</p>
+                                      <input type="text" class="form-control">
+                                  </div>
+                                  <div class="info">
+                                      <p>&#128177;Intereses:</p>
+                                      <input type="text" class="form-control">
+                                  </div> 
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                  <button type="button" class="btn btn-primary">Guardar cambios</button>
+                              </div>
+                          </div>
+                          </div>
+                       </div>
+                      </div>
+
             </aside> 
             <main>
                 <div class="create-post">
@@ -107,7 +176,7 @@
                       
                       <div class="post-header">
                         <div class="profile-pic"></div>
-                        <div class="usuario-detallado">
+                        <div class="user-info">
                           <h3>Otro nombre del Usuario</h3>
                           <span>Hace 3 horas</span>
                         </div>
@@ -200,103 +269,6 @@
         </div>
     </div>
 
-    <div class="profile">
-      <aside class="sidebar">
-                  
-        <!-- <div class="profile">
-               <img src="img/usuario.png" alt="Foto de perfil">
-               <h2>User Name</h2>
-           </div>
-           <div class="friends">
-               <h3>Contactos</h3>
-               <ul>
-                   <li>Contacto 1</li>
-                   <li>Contacto 2</li>
-                   <li>Contacto 3</li>
-                 </ul>
-           </div> -->
-           <div class="user">
-               <figure>
-                 <img src="img/fondo.png" alt="cover image" class="img-general">
-               </figure>
-               <img src="img/perfil.jpg" class="photo">
-               <div class="user-data">
-                 <div class="container-info">
-                   <div class="name">
-                     <p id="userName">VALERIA MENDEZ</p>
-                     
-                     <img id="editName" src="./img/edit.png" class="edit">
-                     <p id="saveName" class="hide iconSave"><i class="far fa-save" aria-hidden="true"></i></p>
-                 
-                   </div>
-                   <div class="description">
-                     <p id="userAbout">&lt;/&gt; Developer</p>
-                     
-                     <img id="editAbout" src="./img/edit.png" class="edit">
-                     <p id="saveAbout" class="hide iconSave"><i class="far fa-save" aria-hidden="true"></i></p>
-                   </div>
-                 </div>
-               </div>
-               <div class="detalles1">
-                   <h2>Detalles</h2> 
-                   <i class="fi fi-br-edit"></i>
-               </div>
-               
-               <div class="modal-body">
-                   <div class="detalles">
-                       <h3 id="infoPersonal">Información personal</h3>
-                       <p>&#128197;Fecha de cumpleaños:</p>
-                       <p>&#128188;Lugar de estudio:</p>
-                       <p>&#9993;Correo electrónico:</p>
-                       <p>&#10084;Estado civil:</p>
-                       <p>&#128177;Intereses:</p>
-                   </div>
-               </div>
-                       
-                   <!-- Button trigger modal -->
-                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                   Editar Información
-                   <i class="fi fi-br-edit"></i>
-                   </button>
- 
-                   <!-- Modal -->
-                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                       <div class="modal-dialog">
-                       <div class="modal-content">
-                           <div class="modal-header">
-                               <h1 class="modal-title fs-5" id="exampleModalLabel">Información personal</h1>
-                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                           </div>
-                           <div class="modal-body">
-                               <div class="info">
-                                   <p>&#128197;Fecha de cumpleaños:</p>
-                                   <input type="text" class="form-control">
-                               </div>
-                               <div class="info">
-                                   <p>&#128188;Lugar de estudio:</p>
-                                   <input type="text" class="form-control">
-                               </div>
-                               <div class="info">
-                                   <p>&#9993;Correo electronico:</p>
-                                   <input type="text" class="form-control">
-                               </div>
-                               <div class="info">
-                                   <p>&#10084;Estado civil:</p>
-                                   <input type="text" class="form-control">
-                               </div>
-                               <div class="info">
-                                   <p>&#128177;Intereses:</p>
-                                   <input type="text" class="form-control">
-                               </div> 
-                           </div>
-                           <div class="modal-footer">
-                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                               <button type="button" class="btn btn-primary">Guardar cambios</button>
-                           </div>
-                       </div>
-                       </div>
-                   </div>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>

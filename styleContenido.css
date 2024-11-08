@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Signika+Negative:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa:wght@200..800&family=Lobster&family=Signika+Negative&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -136,7 +140,7 @@ nav{
 }
 
 .sidebar {
-    width: 25%;
+    width: 30%;
     background:linear-gradient(to right, #5e92f3, #6783F0) ;
     padding: 5px;
     border-radius: 5px;
@@ -172,6 +176,7 @@ main {
     margin: 0 10px;          /* Margen lateral entre los elementos */
     box-sizing: border-box;
     width: 60%;
+    flex: 2;
 }
 
 .camera{
@@ -246,7 +251,8 @@ main {
     margin-right: 0;  
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    padding: 15px;  
+    padding: 15px; 
+    flex: 1; 
 }
 
 /*Aqui el css del post de la publiación*/
@@ -347,9 +353,24 @@ main {
     border: none;
     background-color: transparent;
   }
+  .editar,
+  .borrar{
+
+  }
 /*Aqui termina el css del post de la publicación*/
 
 /*Empieza el css de aside(perfil)*/
+
+.sidebar {
+    width: 60%;
+    background:linear-gradient(to right, #5e92f3, #6783F0) ;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    align-items: center;
+    flex: 1;
+}
 div {
     display: block;
     unicode-bidi: isolate;
@@ -364,7 +385,7 @@ figure {
     unicode-bidi: isolate;
 }
 
-.user-logged {
+.user-detallado {
     width: 100%;
     text-align: center;
 }
@@ -443,17 +464,39 @@ figure img {
     right: 0;
     margin-right: 0.4em;
 }
-.botones{
+/* css de Detalles*/
+.detalles{
     display: flex;
-    flex-direction: row-reverse;
-    align-items: end;
-    background-color: none;
-    gap: 10px;
+    justify-content: flex-start;
+    flex-direction: column;
+    
 }
-.borrar,
-.editar{
-    border: 2px solid rgb(66, 61, 61);
-    border-radius: 10px;
-    padding: 5px;
-    background-color: rgb(255, 230, 230);
+
+.detalles p {
+  width: 310px;
+  font-family: 'Signika Negative';
+}
+
+h2{
+    width: 240px;
+    font-family: 'Bebas Neue';
+}
+
+h3{
+    width: 340px;
+    font-family: 'Signika Negative';
+}
+
+.detalles1{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }

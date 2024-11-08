@@ -18,7 +18,7 @@ body {
     align-items: center;
 }
 .sidebar {
-    width: 60%;
+    width: 30%;
     background:linear-gradient(to right, #5e92f3, #6783F0) ;
     padding: 5px;
     border-radius: 5px;
