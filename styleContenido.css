@@ -347,6 +347,7 @@ main {
   }
   .comentario-formulario textarea{
     outline: none;
+    padding: 10px;
   }
 
   button{
